@@ -10,7 +10,7 @@ pipeline {
         stage('Build') {
             steps {
                 git branch: 'main', url: 'hhttps://github.com/Gayu9105/apache-log-parser-python.git'
-                sh 'apache-log-parser.py'
+                sh 'python3 apache-log-parser.py'
             }
         }
         stage('Test') {
